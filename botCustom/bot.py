@@ -46,8 +46,7 @@ def main():
     maestro.finish_task(
         task_id=execution.task_id,
         status=AutomationTaskFinishStatus.SUCCESS,
-        message="Task Finished OK.",
-        processed_items=1
+        message="Task Finished OK."
     )
 
 
