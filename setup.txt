@@ -6,3 +6,11 @@
 2 - executar o cookiecutter para extarir o codigo base
     python -m cookiecutter https://github.com/botcity-dev/bot-python-template/archive/v2.zip
 
+
+3 - executar o instalador de dependencias que usa o arquivo "requirements.txt" como base para atualizar os pacotes 
+    pip install --upgrade -r requirements.txt
+
+
+4 - deploy da automação no orchestrator
+*Não se esquecer de colocar todas as dependencias no requirements.txt
+    ./BotCLI bot deploy -version 1.0 -botId "BotName" -file "my_bot.zip" -python

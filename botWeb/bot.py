@@ -28,6 +28,7 @@ from botcity.web import WebBot, Browser, By
 # Import for integration with BotCity Maestro SDK
 from botcity.maestro import *
 
+
 # Disable errors if we are not connected to Maestro
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
