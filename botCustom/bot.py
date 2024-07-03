@@ -27,6 +27,7 @@ from botcity.maestro import *
 
 # Disable errors if we are not connected to Maestro
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
+BotMaestroSDK.VERIFY_SSL_CERT = False 
 
 
 def main():
@@ -40,15 +41,16 @@ def main():
     print(f"Task Parameters are: {execution.parameters}")
 
     # Implement here your logic...
-    print("Hi lorena")
+    print("Hi")
 
     # Uncomment to mark this task as finished on BotMaestro
     maestro.finish_task(
-        task_id=execution.task_id,
-        status=AutomationTaskFinishStatus.SUCCESS,
-        message="Task Finished OK."
+       task_id=execution.task_id,
+       status=AutomationTaskFinishStatus.SUCCESS,
+       message="Task Finished OK."
     )
 
 
 if __name__ == '__main__':
     main()
+

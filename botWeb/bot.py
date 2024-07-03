@@ -31,6 +31,8 @@ from botcity.maestro import *
 
 # Disable errors if we are not connected to Maestro
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
+BotMaestroSDK.VERIFY_SSL_CERT = False 
+
 
 
 def main():
@@ -69,11 +71,11 @@ def main():
     bot.stop_browser()
 
     # Uncomment to mark this task as finished on BotMaestro
-    # maestro.finish_task(
-    #     task_id=execution.task_id,
-    #     status=AutomationTaskFinishStatus.SUCCESS,
-    #     message="Task Finished OK."
-    # )
+    maestro.finish_task(
+         task_id=execution.task_id,
+         status=AutomationTaskFinishStatus.SUCCESS,
+         message="Task Finished OK."
+    )
 
 
 def not_found(label):

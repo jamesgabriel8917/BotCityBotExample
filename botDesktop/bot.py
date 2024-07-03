@@ -29,6 +29,8 @@ from botcity.maestro import *
 
 # Disable errors if we are not connected to Maestro
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
+BotMaestroSDK.VERIFY_SSL_CERT = False 
+
 
 def main():
     # Runner passes the server url, the id of the task being executed,
