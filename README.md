@@ -3,7 +3,7 @@
     python -m pip install --upgrade cookiecutter
 
 
-2 - executar o cookiecutter para extarir o codigo base
+2 - executar o cookiecutter para extarir o codigo base:
     python -m cookiecutter https://github.com/botcity-dev/bot-python-template/archive/v2.zip
 
 
