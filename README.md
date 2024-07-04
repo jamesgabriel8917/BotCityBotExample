@@ -14,4 +14,4 @@
 
 4 - deploy da automação no orchestrator
 *Não se esquecer de colocar todas as dependencias no requirements.txt
-    ./BotCLI bot deploy -version 1.0 -botId "BotName" -file "my_bot.zip" -python
+    .\build.bat
